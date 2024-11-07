@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: panchangRegular;
+}
+@font-face{
+    font-family: panchangBold;
+    src: url(../css/Panchang_Complete/Fonts/OTF/Panchang-Bold.otf);
+}
+@font-face{
+    font-family: panchangRegular;
+    src: url(../css/Panchang_Complete/Fonts/OTF/Panchang-Regular.otf);
+}
+header{
+    width:100%;
+}
+header .header-inner{
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header-inner .join-text{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .header-inner .join-text span{
+    background: black;
+    z-index: 1;
+}
+header .header-inner .join-text img{
+    width: 15%;
+    margin-left:-7%;
+    z-index: 0;
+}
+header .header-inner img{
+    width: 45%;
+}
+#hero{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#hero .hero-inner .join-text h1 span{
+    background-image: url(../images/footer-bg.png);
+    background-size: cover;
+    background-position: center center;
+    color: black;
+}
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+#services .access .join-text h1 span{
+    color: #000;
+    font-size: 50px;
+    font-weight: 800;
+    background-image: url(../images/img-bg.png);
+    background-position: center center;
+    background-size: cover;
+    width: 100px;
+    gap: 30px;
+    padding: 2%;
+}
+#services .services-inner {
+    display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-left: 10%;
+
+}
+#services .services-inner .inner span{
+    background-color: red;
+    
+    
+}
+#services .services-inner .inner{
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+}
+#services .services-inner .inner img{
+    width: 50%;
+    height: auto;
+}
+@media(min-width:768px){
+    #services .services-inner .inner{
+        flex-wrap: wrap;
+        overflow: visible;
+    }
+    #services .services-inner .inner .inner{
+        flex: 0 0 30%;
+    }
+}
+#image-gallery{
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+#image-gallery .image-container{
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+}
+#image-gallery .image-container img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+#dicover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 70vh;
+
+}
+#discover .discover-inner{
+    flex-direction: column;
+    gap: 7%;
+}
+
+#video{
+    display: flex;
+    background-color: rgb(128, 0, 73);
+    width: 100%;
+    height: 50vh;
+}
+
+#video .video-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.moving-line{
+    margin: 0 auto;
+    width: 4px;
+    height: 100px;
+    background: linear-gradient( to bottom, rgb(237, 237, 237),black);
+    /* colortransaformationfromwhitetoblack */transform: translate(-50%, -50%);
+    animation: moveUpDown 2s infinite ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes moveUpDown{
+    0%, 100%{
+        transform: translate(-50%, -50%);
+
+    }
+    50%{
+        transform: translate(-50%, -45%);
+    }
+}
+#contribute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#contribute .access .join-text h1 span{
+    background-image: url(../images/footer-bg.png);
+    background-size: cover;
+    background-position: center center;
+    color: black;
+}
+#john .john-inner .john-cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  #john .john-inner .john-card {
+    text-align: center;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+  }
+  #john .john-inner img {
+    width: 50%;
+    height: auto;
+  }
+  @media (min-width: 768px) {
+    #john .john-inner .john-cards {
+      flex-wrap: wrap;
+      overflow-x: visible;
+    }
+    #john .john-inner .john-card {
+      flex: 0 0 20%;
+    }
+  }
+ footer .icons ul{
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 5%;
+text
+
+  }
